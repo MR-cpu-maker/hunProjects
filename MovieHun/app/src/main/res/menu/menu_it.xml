@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Explorer"
+        android:icon="@drawable/btn_1"
+        android:title="Explore" />
+    <item
+        android:id="@+id/Favourites"
+        android:icon="@drawable/btn_2"
+        android:title="Favourites" />
+    <item
+        android:id="@+id/Pick"
+        android:icon="@drawable/btn_3"
+        android:title="Cart" />
+    <item
+        android:id="@+id/Profile"
+        android:icon="@drawable/btn_4"
+        android:title="Profile" />
+</menu>
