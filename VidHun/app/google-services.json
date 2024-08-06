@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "588767930187",
+    "project_id": "vidhun-edde1",
+    "storage_bucket": "vidhun-edde1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588767930187:android:1a572694e7e53ed8e9eace",
+        "android_client_info": {
+          "package_name": "com.app.vidhun"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7X3QJh3ACN18xz3DSpTGt-IKRn3oPLoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

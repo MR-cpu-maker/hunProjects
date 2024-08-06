@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:background="#11D3E9"
+    tools:context=".Dashboard">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="411dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="320dp"
+        android:background="#939CBF"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/menu" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02"
+        tools:layout_editor_absoluteX="2dp">
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="406dp"
+        android:layout_height="78dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.053">
+
+        <Button
+            android:id="@+id/joinbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:fontFamily="sans-serif-black"
+            android:text="Join"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/btn_style"
+            android:fontFamily="sans-serif-black"
+            android:text="Share"
+            android:textColorLink="#FFEB07"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="399dp"
+        android:layout_height="179dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="416dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:gravity="center_horizontal"
+            android:text="Please sharethis code with your friends to join the chat"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/codebox"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_horizontal"
+            android:inputType="text"
+            android:padding="10dp"
+            android:text="Secret Code"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="226dp"
+        android:layout_height="220dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.805"
+        app:srcCompat="@drawable/icon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
