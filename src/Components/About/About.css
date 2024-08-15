@@ -1,0 +1,86 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px; 
+    margin-top: auto;
+    width: 90%;
+
+}
+.about-left{
+    flex-basis: 90%;
+   
+    
+}
+.about-right{
+    flex-basis:90%;
+    display: inline-table;
+    font-size: 3rem;
+    align-content: center;
+
+    
+
+}
+.about-img{
+    width: 70%;
+    height: 80%;
+    border-radius: 30px;
+    margin-right: 100%;
+    margin-top: 10%;
+    align-items: center;
+    align-content: center;
+   
+   
+
+}
+
+.about h3{
+    font-weight: 500;
+    font-weight: 10px;
+    color: #212EA0;
+    margin-left: 10%;
+    margin-right: 50%;
+   grid-column: auto;
+   align-items: center;
+}
+.about h2{
+    font-size: 35px;
+    color: #fbff00;
+    margin: 10px 0;
+    max-width: 400px;
+   
+    
+}
+.about p{
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    content: "This text will be curved";
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    text-align: center;
+
+color: #000000;
+
+
+}
+
+@media(max-width: 800px){
+    .about{
+        flex-direction: column;
+
+    }
+    .about-left{
+        flex-basis:100%;
+        margin: 20px;
+        order: 2;
+    }
+    .about-right{
+        flex-basis:100%;
+    }
+}
+
+
+
+
